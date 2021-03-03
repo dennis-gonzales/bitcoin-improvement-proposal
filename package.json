@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "bip32": "^2.0.6",
-    "bip39": "^3.0.3"
+    "bip39": "^3.0.3",
+    "ethereumjs-wallet": "^1.0.1"
   }
 }

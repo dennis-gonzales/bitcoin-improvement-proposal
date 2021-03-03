@@ -60,3 +60,4 @@ console.log();
 // sources
 // https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki
 // https://github.com/bitcoinjs/bip39
+// https://www.mobilefish.com/download/ethereum/bip39.html
