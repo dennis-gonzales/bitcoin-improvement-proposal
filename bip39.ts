@@ -34,7 +34,7 @@ console.log("numberOfWords: ", numberOfWords);
 console.log();
 
 
-const seed = mnemonicToSeedSync(mnemonic, "thicc thigs");    
+const seed = mnemonicToSeedSync(mnemonic, "thicc thigs");
 console.log("seed: ", JSON.stringify(seed));
 console.log();
 
