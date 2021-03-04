@@ -22,9 +22,10 @@ console.log("publicExtendedKey(BIP32 Root Key):", publicExtendedKey);
 console.log();
 
 for (let i = 0; i < 3; i++) {
-    // We define the following 5 levels in BIP32 path:
-    // m / purpose' / coin_type' / account' / change / address_index
-    
+    /** 
+     * We define the following 5 levels in BIP32 path:
+     * m / purpose' / coin_type' / account' / change / address_index
+    */
     const derivationPath = `m/44'/60'/0'/0/${i}`;
     const node = hd.derivePath(derivationPath);
     const wallet: Wallet = node.getWallet();
@@ -37,7 +38,7 @@ for (let i = 0; i < 3; i++) {
 }
 
 /**
- * References
+ * References:
  * https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki
  * https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki
  * https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki

@@ -48,16 +48,23 @@ const retievedMnemonic = bip39.entropyToMnemonic(entropy);
 console.log("retievedMnemonic: ", retievedMnemonic);
 console.log();
 
-// references
-// |  ENT  | CS | ENT+CS |  MS  |
-// +-------+----+--------+------+
-// |  128  |  4 |   132  |  12  |
-// |  160  |  5 |   165  |  15  |
-// |  192  |  6 |   198  |  18  |
-// |  224  |  7 |   231  |  21  |
-// |  256  |  8 |   264  |  24  |
+/**
+ * BIP-39 GRAPH
+ * 
+ * |  ENT  | CS | ENT+CS |  MS  |
+ * +-------+----+--------+------+
+ * |  128  |  4 |   132  |  12  |
+ * |  160  |  5 |   165  |  15  |
+ * |  192  |  6 |   198  |  18  |
+ * |  224  |  7 |   231  |  21  |
+ * |  256  |  8 |   264  |  24  |
+ */
 
-// sources
-// https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki
-// https://github.com/bitcoinjs/bip39
-// https://www.mobilefish.com/download/ethereum/bip39.html
+/**
+ * references:
+ * https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki
+ * https://github.com/bitcoinjs/bip39
+ * 
+ * based on:
+ * https://www.mobilefish.com/download/ethereum/bip39.html
+ */
