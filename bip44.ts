@@ -53,6 +53,23 @@ for (let i = 0; i < 3; i++) {
     console.log();
 }
 
+console.log();
+console.log("-------------------------------------------");
+console.log("Restoring addresses and keys => using extended priv-key (xprv) or extended pub-key (xpub)");
+console.log();
+
+/** validate prefix passed on the method fromExtendedKey:
+ * prefix == "xprv"
+ * prefix == "xpub"
+ */
+const retrievedNode = hdkey.fromExtendedKey(privateExtendedKey.toString("hex"));
+
+console.log("retrievedPrivateExtendedKey(BIP32 Root Key): ", retrievedNode.privateExtendedKey());
+console.log();
+
+console.log("retrievedPublicExtendedKey(BIP32 Root Key):", retrievedNode.publicExtendedKey());
+console.log();
+
 /**
  * References:
  * https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki
