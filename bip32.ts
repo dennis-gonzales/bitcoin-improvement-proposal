@@ -65,7 +65,13 @@ console.log("publicExtendedKey(BIP32 Root Key):", publicExtendedKey);
 console.log();
 
 // sources
-// https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki
-// https://github.com/bitcoinjs/bip44-constants
-// https://github.com/ethereumjs/ethereumjs-wallet
-// https://www.mobilefish.com/download/ethereum/hd_wallet.html
+
+/**
+ * references: 
+ * https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki
+ * https://github.com/bitcoinjs/bip44-constants
+ * https://github.com/ethereumjs/ethereumjs-wallet
+ * 
+ * based on:
+ * https://www.mobilefish.com/download/ethereum/hd_wallet.html
+ */
