@@ -12,6 +12,7 @@
   "dependencies": {
     "bip32": "^2.0.6",
     "bip39": "^3.0.3",
+    "bip44-constants": "^9.0.0",
     "ethereumjs-wallet": "^1.0.1"
   }
 }
