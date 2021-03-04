@@ -21,6 +21,22 @@ console.log();
 console.log("publicExtendedKey(BIP32 Root Key):", publicExtendedKey);
 console.log();
 
+const accountDerivationPath = `m/44'/60'/0'`;
+const account = hd.derivePath(accountDerivationPath);
+
+console.log("accountDerivationPath: ", accountDerivationPath);
+console.log("privateExtendedKey: ", account.privateExtendedKey());
+console.log("publicExtendedKey: ", account.publicExtendedKey());
+console.log();
+
+const changeDerivationPath = `m/44'/60'/0'/0`;
+const change = hd.derivePath(changeDerivationPath);
+
+console.log("changeDerivationPath: ", changeDerivationPath);
+console.log("privateExtendedKey: ", change.privateExtendedKey());
+console.log("publicExtendedKey: ", change.publicExtendedKey());
+console.log();
+
 for (let i = 0; i < 3; i++) {
     /** 
      * We define the following 5 levels in BIP32 path:
@@ -30,10 +46,10 @@ for (let i = 0; i < 3; i++) {
     const node = hd.derivePath(derivationPath);
     const wallet: Wallet = node.getWallet();
 
-    console.log("derivationPath: ", derivationPath);
+    console.log("indexDerivationPath: ", derivationPath);
     console.log("walletAddress: ", wallet.getAddress().toString("hex"));
     console.log("privateKey: ", wallet.getPrivateKeyString());
-    console.log("publicKey: ", wallet.getPublicKey().toString("hex"));
+    console.log("publicKey: ", wallet.getPublicKeyString());
     console.log();
 }
 
